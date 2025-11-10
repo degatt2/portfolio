@@ -1,0 +1,925 @@
+{  
+
+  "colors":[
+    "#5e478b",
+    "#f7cac9",
+    "#92a8d1",
+    "#97504d",
+    "#ae64a8",
+    "#ee5441",
+    "#d94f71",
+    "#44b4a9",
+    "#efbe58",
+    "#5a5c9f",
+    "#9b1b31",
+    "#ddcdbe",
+    "#52afad",
+    "#e1583d",
+    "#7bc3c4",
+    "#bf2033",
+    "#c74476",
+    "#9bb6d3"
+  ],
+
+  "logotype":"Dega.",
+
+
+  "about": "<p>Hi!<br>I’m Daniel González, based in Berlin, Germany.</p> <p>I’m a product designer with 18+ years of experience working for companies like <a target='_blank' href='https://www.personio.com/'>Personio</a>, <a target='_blank' href='https://www.here.com/'>HERE Technologies</a>, <a target='_blank' href='https://www.nokia.com/'>Nokia</a>, <a target='_blank' href='https://www.frog.co/'>Frog Design</a>, <a target='_blank' href='http://www.tid.es/es'>Telefónica I+D</a>, <a target='_blank' href='https://elbullifoundation.com/'>elBullifoundation</a> and others, across HR tech, fintech, automotive, IoT and data visualization products.</p> <p>I’m a broad, experienced generalist who works across the full design spectrum, which gives me a holistic view of how products should look, feel and work. I combine visual design, UX, motion, and prototyping/development with an innovation mindset to discover better, more effective ways to solve problems and to make the brand tangible in every interaction.</p> <p>I lead by doing: setting the bar through hands-on work, sharing tools and methods with the team, and creating a design culture where strong craft and systems thinking are the default.</p> <p>In recent roles I’ve operated on two levels: on the craft side, redesigning core product experiences from the ground up and aligning product and brand into a more modern, coherent interface; and on the system side, defining standards, workflows and internal tools that make that level of quality scalable. I’ve built design-ops tooling to automate on-brand asset creation and reduce review overhead, so designers and developers can focus on the highest-impact parts of the product. This approach addresses a common growth problem: how to keep raising the quality bar while the organization scales.</p> <p>Additionally, I mentor around accessibility and inclusive design, because every person should have equal access to information in their everyday life.</p>",
+  
+  "contact":{
+    "fullname": "Daniel Gonzalez", 
+    "email": "degatt2@gmail.com" 
+  },
+
+  "cv": {
+    "jobs":[
+      {
+        "position":"Staff Product Designer",
+        "company-name": "Personio",
+        "start-date": "July 01 20233",
+        "is_current": true
+      }
+    ]
+  },
+  "privates":[
+
+    {
+      "name": "Mutuo Timeline",
+      "subtitle": "",
+      "unique_url": "mutuo",
+      "description":"<p>A description goes in here.</p>",
+      "categories": [ "ui", "ux" ],
+      "is_selected": false,
+      "is_private": false,
+      "client": "Mutuo",
+      "date": 2012,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#f3f3f4",
+      "ui_color": "#000000",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "mutuo_timeline.mp4", "type": "video" },
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" }
+      ]
+    },
+
+    {
+      "name": "User Interface Design",
+      "unique_url": "here-ui-design",
+      "description":"<p>Description to be added soon.</p>",
+      "categories": [ "data-visualization", "ui" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "HERE Technologies",
+      "date": 2022,
+      "location": "Berlin, Germany",
+
+      "bg_color": "rgb(255,255,255)",
+      "ui_color": "#F7371E",
+      "size": 1,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" },
+        { "url": "image03.jpg", "type": "image" },
+        { "url": "image04.jpg", "type": "image" }
+      ]
+    },
+    
+    
+    {
+      "name": "BBVA Research App",
+      "unique_url": "bbva",
+      "description":"<p>I'll write something soon, I promise (finger crossed in the back).</p>",
+      "categories": [ "ui", "ux" ],
+      "is_selected": false,
+      "is_private": true,
+      "client": "Fjord",
+      "date": 2013,
+      "location": "Madrid, Spain",
+
+      "bg_color": "#b4def6",
+      "ui_color": "#2558ab",
+      "size": 1,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" }
+      ]
+    }
+
+  ],
+
+  
+	"projects":[
+    {
+      "name": "Personio Rebrand",
+      "subtitle": "Rebranding the company's visual identity",
+      "unique_url": "personio-rebrand",
+      "description":"<article class='post'><p>Personio is one of the big HR players in Europe, and when the company started getting ready to enter the North American market — a market with louder, more established competitors — it became clear the product and the brand had to tell the same, stronger story. Not just a new landing page, but a unified experience across product, marketing, and motion.</p><figure><img src='assets/images/personio-rebrand/ui_before_after.png' alt='Personio UI before and after the redesign'><figcaption>Fig. 1 — Early view of the product UI improvements.</figcaption></figure><h2>Overhauling the Product</h2><p>We started from the inside out, with the product. Personio’s app was growing fast and teams were shipping features in parallel, so the first thing we did was define a <strong>robust UX architecture</strong>: shared navigation patterns, layout rules, page templates, and a way to plug in new modules without breaking coherence. We didn’t try to fix everything at once — we went squad by squad, product area by product area, reviewing and overhauling.</p><p>Inside the product, we introduced <strong>full customization for customers</strong>: many of Personio’s clients want their HR tools to look like their own brand. That meant our color system had to be themable. We designed tokens and elevation rules that could accept a client’s primary color and still produce accessible UI states, charts, inputs, and alerts — every component had to scale regardless of the base color a customer chose.</p><p>We also designed <strong>microinteractions</strong> — loaders, spinners, home-screen loading behavior, panel transitions — to make the product feel alive and premium without being distracting. Motion became part of the brand expression inside the product.</p><figure><img src='assets/images/personio-rebrand/ui-garden.png' alt='Updated Personio UI components'><figcaption>Fig. 2 — Consolidated UI components used across product areas.</figcaption></figure><h2>Rebranding</h2><p>After about a year of stabilizing and upgrading the product experience, we shifted the focus to the <strong>brand</strong> itself. Redesigning the brand in six months was ambitious, but we built a multidisciplinary squad where each person owned a vertical — color, tone of voice, illustration, iconography, motion, web — and we iterated together so nothing felt disconnected. The result was a brand that felt more premium and confident, but still warm and people-centric.</p><p>The first item on the list was to <strong>refresh the logotype</strong> to make it feel more current and aligned with where the company was going — still recognizably Personio, but cleaner, more confident, and easier to apply across digital surfaces.</p><figure><img src='assets/images/personio-rebrand/logo.png' alt='Updated Personio logotype'><figcaption>Fig. 3 — Refreshed logotype aligned with the new direction.</figcaption></figure><figure><video src='assets/images/personio-rebrand/logo_smaller.mp4' autoplay muted loop playsinline controls poster='assets/images/personio-rebrand/website-scroll.jpg'></video><figcaption>Fig. 4 — Motion used as part of the new brand expression.</figcaption></figure><figure><video src='assets/images/personio-rebrand/website-scroll.mp4' autoplay muted loop playsinline controls poster='assets/images/personio-rebrand/website-scroll.jpg'></video><figcaption>Fig. 5 — Marketing website motion bringing the system to life.</figcaption></figure><figure><img src='assets/images/personio-rebrand/color-garden.png' alt='Color system exploration for the brand'><figcaption>Fig. 6 — Color and theming explorations for product and brand.</figcaption></figure><h2>Distribution and Scale</h2><p>Then came the scaling phase. We documented everything in Figma: foundations, components, motion specs, theming examples, and brand moments for product UI. We created the new component library so other designers could update their areas without reinventing anything, and we art-directed the parts that needed more visual expression.</p><p>And because no one wants to dig through a 120-page brand PDF, we built <strong>internal brand tools</strong>: generators for on-brand images and illustrations in the right sizes and styles, with export to vector/PNG, plus motion helpers so editors could create intros/outros with the right typography and timing in a few clicks. That was the real unlock — the brand wasn’t just defined, it was deployable across the company, fast, and consistently on-brand.</p><figure><img src='assets/images/personio-rebrand/tools_preview.png' alt='Internal brand tools preview'><figcaption>Fig. 7 — Internal brand tools to make the system usable for non-designers.</figcaption></figure></article>",
+      "categories": [ "brand" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Personio",
+      "date": 2025,
+      "location": "Berlin, Germany",
+
+      "bg_color": "#EFD8DD",
+      "ui_color": "#371246",
+      "size": 2,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "personio_rebrand_trailer.mp4", "type": "video", "poster": "video_cover.jpg" },
+        { "url": "ui_before_after.png", "type": "image" },
+        { "url": "logo.png", "type": "image" },
+        { "url": "logo_smaller.mp4", "type": "video" },
+        { "url": "color-garden.png", "type": "image" },
+        { "url": "ui-garden.png", "type": "image" }
+      ]
+    },
+    {
+      "name": "HUG",
+      "subtitle": "Designing the launching experience.",
+      "unique_url": "personio-hug",
+      "description":"<article class='post'><p>HUG — Personio’s annual launch event — is where the company shows what’s coming next: new products, upcoming features, and a clearer story about the future of HR. For this edition I led the design of the keynote experience, and the goal was to do more than “show screens.” We wanted an experience that framed the announcements inside a story people could remember.</p><figure><img src='assets/images/personio-hug/lighthouse.png' alt='Lighthouse visual concept'><figcaption>Fig. 1 — Lighthouse as the guiding metaphor for the event.</figcaption></figure><p>The core concept was the lighthouse — a symbol for guidance and clarity, always visible even in rough conditions. That matched what Personio was launching: products that help HR teams see further into their operations, act faster, and stay oriented even when the business context is changing. The message was: Personio is the light in a complex HR landscape.</p><figure><video src='assets/images/personio-hug/intro.mp4' autoplay muted loop playsinline controls poster='assets/images/personio-hug/product-poster.jpg'></video><figcaption>Fig. 2 — Intro shown the lighthouse idea.</figcaption></figure><figure><img src='assets/images/personio-hug/cover.jpg' alt='Overview of all the screens redesigned'><figcaption>Fig. 3 — Overview of the redesigned app screens.</figcaption></figure><p>Visually, the lighthouse idea cascaded into the whole environment: stage lighting that behaved like moving beams, gradients and shadows suggesting depth. It also made the whole thing more cinematic — we could use motion, pacing, and narration to guide attention. We even crafted a music layer for the event — cues for entries, reveals, and transitions — so the rhythm of the keynote matched the narrative beats. Presentation materials felt premium — clean typography, confident color, and enough negative space to make every message land. We designed event materials (signage, screen frames, badges) to live in the same ecosystem so the experience felt coherent across keynote, venue, and comms.</p><figure><video src='assets/images/personio-hug/product.mp4' autoplay muted loop playsinline controls poster='assets/images/personio-hug/product-poster.jpg'></video><figcaption>Fig. 3 — Product motion shown during the HUG keynote.</figcaption></figure><p>We were careful with legibility on stage: high contrast, simple layouts, motion used to support the story (not compete with it), music timed to moments of emphasis, and speaker positioning planned so they never blocked key content on screen. The result was a product launch that felt guided, premium, and unmistakably Personio, even without showing the full product UI on stage.</p></article>",
+      "categories": [ "brand" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Personio",
+      "date": 2024,
+      "location": "Berlin, Germany",
+
+      "bg_color": "#0D191F",
+      "ui_color": "#ffffff",
+      "size": 2,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "hug 2024 trailer.mp4", "type": "video", "poster": "cover.png" },
+        { "url": "intro.mp4", "type": "video", "poster": "cover.png" },
+        { "url": "product.mp4", "type": "video", "poster": "cover.png" },
+        { "url": "charts.mp4", "type": "video", "poster": "cover.png" },
+        { "url": "chart.mp4", "type": "video", "poster": "cover.png" }
+      ]
+    },
+    {
+      "name": "Klar",
+      "subtitle": "Transforming Mexican's financial experience",
+      "unique_url": "klar",
+      "description":"<article class='post'><p>Klar had just gotten its banking license, which basically meant: we weren’t just a nice fintech anymore — we could operate as a real bank, people’s money was protected, and we had to look and behave like something you can actually trust with your savings. That opened the door to overhaul two things at once: the product experience and the brand.</p><figure><img src='assets/images/klar/image00.png' alt='Before (left) and after (right)'><figcaption>Fig. 1 — Before (left) and after (right).</figcaption></figure><p>The goal was clear: make Klar feel more premium without losing the very Mexican, very warm tone people already liked. Not premium as in cold and corporate — premium as in thoughtful, clear, and built for people here. The tone of voice had to stay casual and ‘de confianza,’ because in Mexico money products work better when they feel close, almost family-like.</p><figure><img src='assets/images/klar/image08.jpg' alt='Family reunion matching the brand tone'><figcaption>Fig. 2 — Representation of the brand tone of voice.</figcaption></figure><p>We defined the brand values — <strong>access, freedom, clarity, transparency</strong> — and used them as the backbone for everything. Access and clarity became interfaces that show the most relevant information first, with no clutter. Transparency meant no hidden states and no ‘where is my money?’ moments. And freedom — in the sense of financial freedom — was the core feeling we wanted the whole experience to evoke.</p><p>Visually we kept it mature but still vibrant, echoing Mexican culture: warm neutrals, greens, lots of white background, black text for legibility. Iconography and photography were localized — people, objects and scenes that actually look like Mexico, not generic fintech stock.</p><p>It wasn’t just a repaint. We revisited the information architecture: what lives on the home screen, how you move between card, payments, savings, credit, and how quickly you can understand your money status at a glance.</p><figure><img src='assets/images/klar/image01.png' alt='Overview of all the screens redesigned'><figcaption>Fig. 3 — Overview of the redesigned app screens.</figcaption></figure><p>Once the new visual language and patterns were solid, we turned it into a proper design system so the team could redesign the rest of the app without reinventing components. Tokens, spacing, type scales, cards, list rows, alerts — all documented. Then we worked with engineering to migrate components so they rendered 1:1 with the system — design and code connected at the core. That cut down screen-by-screen QA, reduced duplicated code, and gave both designers and developers a single source of truth.</p><figure><img src='assets/images/klar/image03.png' alt='Design system documentation view'><figcaption>Fig. 4 — A glimpse of the design system documentation.</figcaption></figure><p><strong>Impact.</strong> After the redesign, Klar was able to grow into one of the most popular digital banking experiences in the region without having to refresh the look &amp; feel every year. The system stayed relevant because it wasn’t just ‘pretty UI’ — it was design plus design ops as a scaling tool: a clear brand, a tidy architecture, and a robust system that let the team ship faster, more consistently, and with the same voice.</p></article>",
+      "categories": [ "leadership", "design-systems" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Klar Technologies",
+      "date": 2021,
+      "location": "Berlin, Germany",
+
+      "bg_color": "#c3bdad",
+      "ui_color": "#1c1c1c",
+      "size": 1,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "klar_animations.mp4", "type": "video", "poster": "image01.png" },
+        { "url": "image00.png", "type": "image" },
+        { "url": "image01.png", "type": "image" },
+        { "url": "image02.png", "type": "image" },
+        { "url": "image03.png", "type": "image" },
+        { "url": "image04.png", "type": "image" },
+        { "url": "image05.png", "type": "image" },
+        { "url": "image06.png", "type": "image" },
+        { "url": "image07.png", "type": "image" }
+        
+      ]
+    },
+    {
+      "name": "WeGo Deliver",
+      "subtitle": "Empowering small businesses to thrive through delivery services.",
+      "unique_url": "wego-deliver",
+      "description":"<article class='post'><p>When the pandemic hit and cities went into lockdown, a lot of small businesses and restaurants suddenly lost their walk-in customers, while <strong>delivery requests shot up</strong>. People still wanted cakes, food, groceries — but most of these businesses didn’t have the digital setup to switch that fast, and they still wanted to keep their teams working. <em>This wasn’t just one city</em>; we were seeing the same pattern everywhere.</p><figure><img src='assets/images/wego-deliver/canal.jpg' alt='Owners of Canal, a pastry shop'><figcaption>Fig. 1 — Guadalupe’s pastry shop, one of the first to ask for a delivery-only solution.</figcaption></figure><p>Right in the middle of that, my friend Guadalupe — she runs a pastry shop — called me and said: ‘Hey, does HERE have something that helps me go fully delivery?’ Inside HERE we were already working on a LastMile product… but it wasn’t public yet. Telling her to ‘wait for the launch’ didn’t make sense. So we looked for a shortcut, found an open-source API from the same team, and decided to build a leaner tool on top of it. I pulled a small team together and the brief was very clear: <strong>make it real, fast</strong>.</p><p>We did have a lot of LastMile research at HERE, but most of it was for <em>big operators</em> — fleets, dispatchers, integrated systems. That doesn’t map 1:1 to a bakery. So we talked directly to the people we wanted to help: how many stops they do per day, what vehicles they use, how they transport products, how comfortable they are with tech. The pattern was obvious: planning routes by hand takes time, it’s easy to make mistakes, and keeping customers updated on arrivals is annoying. That’s basically the travelling-salesman problem — and that part <strong>we already knew how to solve</strong>.</p><figure><img src='assets/images/wego-deliver/image01.png' alt='The whole UX flow, from importing to dispatching orders'><figcaption>Fig. 2 — Early UX flow: intro, Depot and fleet, orders, delivery overview.</figcaption></figure><p>From there we went <strong>UX-first</strong>. The biggest friction wasn’t routing, it was importing. Most people can export something from Excel, but they won’t clean a CSV. So we designed the <strong>‘add orders’</strong> step to do the work: accept different CSVs, infer columns, auto-map addresses, and only stop to ask for more when it couldn’t guess. The idea was: if you have a file, the app should adapt to you — <em>not the other way around</em>. We kept it <strong>mobile-first</strong> too, because a lot of owners run their business from their phone.</p><figure><img src='assets/images/wego-deliver/image03.png' alt='A social post promoting the app'><figcaption>Fig. 3 — Social/brand alignment so it didn’t look like an internal hack.</figcaption></figure><p>We also didn’t want it to look like a side project. While we were building, I synced with brand, content, and the WeGo team so naming, tone, and visuals matched the rest of HERE. That made the rollout smoother. After a few iterations — about three months — we were ready to go public, and I worked with brand/marketing on launch assets (video, blog, social) so the tool actually reached the small businesses we built it for.</p><figure><img src='assets/images/wego-deliver/image06.png' alt='A photo of the Salvation Army volunteers, and the food they delivered'><figcaption>Fig. 4 — NGOs and community groups using the tool to deliver food during restrictions.</figcaption></figure><p><strong>The response was the best part.</strong> People wrote to say thanks for making it free during all the changing rules. NGOs used it to deliver food to schools in low-income areas during holidays. Internally, it turned into a little innovation space inside the LastMile team — a place to try ideas, validate with real users, and push the UX/UI bar — and it ended up in our social responsibility comms as a good example of <strong>design + speed actually helping people</strong>.</p></article>",
+      "categories": [ "data-visualization", "ux", "ui" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "HERE Technologies",
+      "date": 2020,
+      "location": "Berlin, Germany",
+
+      "bg_color": "#DEDEDE",
+      "ui_color": "#000000",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image02.png", "type": "image" },
+        { "url": "image01.png", "type": "image" },
+        { "url": "image05.png", "type": "image" },
+        { "url": "image01.png", "type": "image" },
+        { "url": "image03.png", "type": "image" },
+        { "url": "image07.png", "type": "image" },
+        { "url": "image06.png", "type": "image" },
+        { "url": "wegodelivery-tutorial.mp4", "type": "video" },
+        { "url": "wegodelivery-promo.mp4", "type": "video" }
+      ]
+    },
+    {
+      "name": "Data Visualization System",
+      "subtitle": "A Data Visualization System for Personio",
+      "unique_url": "personio-data",
+      "description":"<article class='post'><p>As part of a broader product overhaul, Personio was moving toward a fully data-driven product strategy. The vision was that every app should surface meaningful, reliable insights — not occasionally, but as a core experience. To make that possible across multiple teams and products, we needed to build a <strong>data visualization design system</strong> and, just as importantly, <strong>data literacy within the design team</strong>.</p><h2>System Design</h2><p>The goal was to reimagine the data-viz experience and create the building blocks for a system: chart and insight components that are responsive across layouts, scalable to different data sizes, customizable to customer brand colors, readable and accessible, and aesthetically aligned with Personio’s product language. We defined rules for dashboards, detail pages, cards, and modals; worked with tokens instead of hardcoded colors; set spacing, label hierarchy, and typography; and specified how dense views should <em>degrade gracefully</em>. The system also covered empty, loading, and error states so the experience around the chart was as considered as the chart itself.</p><figure><img src='assets/images/personio-data/docs.png' alt='Design system documentation overview'><figcaption>Fig. 1 — Documentation: foundations, components, and usage guidelines.</figcaption></figure><h2>Interactions</h2><p>Interaction was a key differentiator. We designed an interactive legend users can work with: click to show/hide a category, alt-click to isolate one series. Date and filter components were also designed to streamline exploration. We defined how axes and transitions behave — how a chart animates on range changes, how zoom/pan is handled, and how to maintain orientation in time-based datasets. Instead of every team inventing different behaviors, the system provides one consistent interaction model.</p><figure><video src='assets/images/personio-data/charts-intro.mp4' autoplay muted loop playsinline controls></video><figcaption>Fig. 2 — Core interactions and motion principles in action.</figcaption></figure><h2>Accessibility</h2><p>Accessibility was part of the core brief: color-blind-friendly palettes, sufficient background/data contrast, and screen-reader-friendly structure and descriptions. The color system remains flexible enough to inherit or map to customer brand colors without breaking contrast or meaning — critical for customers who white-label their HR tools.</p><figure><img src='assets/images/personio-data/colors.png' alt='Color tokens and palettes for accessible charts'><figcaption>Fig. 3 — Palette and token system designed for accessibility and theming.</figcaption></figure><h2>Redesigning the ‘Analytics’ experience</h2><p>Once the system was mature, I led the team to apply it to one of Personio’s heaviest data products: <strong>Analytics</strong> — the tool customers use to explore HR data and create reports. We simplified the application architecture with clearer entry points, fewer steps, and a path to insight in just a few clicks, even for non-analysts. We built predefined views for common HR questions so people can get answers in only a few clicks. Alongside the product overhaul, I supported every team to navigate and learn the complex world of data.</p><figure><img src='assets/images/personio-data/analytics.png' alt='Analytics screens applying the chart system'><figcaption>Fig. 4 — The Analytics redesign applying the visualization system end-to-end.</figcaption></figure><h2>Insights with AI</h2><p>We explored AI as a layer on top of the data to make analytics more approachable: scan large datasets, surface what changed, flag outliers, and explain ‘what matters this month’ in plain language. We designed flows where a user can request a chart summary or get automatic insight suggestions based on the current dataset. These weren’t blue-sky concepts — we tied them to the roadmap so they could reach production within a year.</p><figure><img src='assets/images/personio-data/ai.png' alt='AI insights component example'><figcaption>Fig. 4 — The Analytics redesign applying the visualization system end-to-end.</figcaption></figure><h2>Impact</h2><p>This work set the <strong>visual and interaction standard</strong> for data across Personio. Teams could adopt components, stay on brand, and avoid reinventing behaviors. It raised the quality bar and made Personio’s data story coherent: whether in reporting, attendance, or payroll, insights felt like part of the same system.</p></article>",
+      "categories": [ "data-visualization", "ux", "ui" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Personal",
+      "date": 2025,
+      "location": "Berlin, Germany",
+
+      "bg_color": "#DEDEDE",
+      "ui_color": "#000000",
+      "size": 1,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "linechart.jpg", "type": "image" }
+      ]
+    },
+    {
+      "name": "Piel",
+      "subtitle": "",
+      "unique_url": "piel",
+      "description":"<article class='post'><p><strong>Piel.</strong> A visual investigation into time, memory, and identity through the language of the skin.</p><p>The face, as a sensitive surface, becomes a living archive where personal and collective history leave their traces: folds, wrinkles, scars, transformations. Each portrait is a mirror of time and, at once, an invitation to contemplate the beauty of different skin tones and the singular way each one ages.</p><p>It’s a digital art project that treats human skin as a living map — a surface where time leaves its marks, where memories, love, and loss are etched in subtle lines and textures. Through interactive visuals and poetic elements, the work invites viewers to reflect on their own skin as an archive of experiences.</p><p>It’s an experiment at the intersection of art, technology, and human storytelling.</p></article>",
+      "categories": [ "experimental", "shader" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Personal",
+      "date": 2025,
+      "location": "Berlin, Germany",
+
+      "ui_color": "#DEDEDE",
+      "bg_color": "#000000",
+      
+      "size": 0,
+
+      "cover_img": "cover.gif",
+      "slideshow_imgs": [
+        { "url": "piel.mp4", "type": "video" }
+      ]
+    },
+    
+    {
+      "name": "HERE Style Editor",
+      "subtitle": "Designing a cartographic experience",
+      "unique_url": "here-style-editor",
+      "description":"<p>Description to be added soon.</p>",
+      "categories": [ "data-visualization", "ui" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "HERE Technologies",
+      "date": 2021,
+      "location": "Berlin, Germany",
+
+      "bg_color": "#000000",
+      "ui_color": "#FFFFFF",
+      "size": 1,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" }
+      ]
+    },
+    {
+      "name": "HERE Marketplace",
+      "subtitle": "Designing a shopping experience for location data",
+      "unique_url": "here-marketplace",
+      "description":"<article class='post'><p>For several years, HERE Technologies’ goal has been to become the leading location platform — a place where HERE and third-party data products work seamlessly, plug easily into visualization tools and services, and can be sourced, bought, and sold through the HERE Marketplace.</p><p>Map data at HERE came from many different sources, in different formats, often measured in terabytes, and usually had to be parsed through different APIs. That made it hard for customers to evaluate the quality of the data and decide what to buy. Very often sales had to jump in — sometimes even pulling in a whole team of engineers — just to help a client see a sample. The process worked, but it wasn’t efficient.</p><figure><video src='assets/images/here-marketplace/coverage.mp4' autoplay muted loop playsinline controls></video><figcaption>Fig. 1 — Example of a dataset coverage view designed for the new experience.</figcaption></figure><p>The goal of the marketplace was to change that: let customers discover, preview, and buy data from HERE and third parties without having to talk to sales every single time. We already had the technology and the exploratory API tools — the real challenge was to put them behind a single, purposeful experience. Most of the design work was actually about hiding a fragmented, messy tech stack behind a clean, predictable interface.</p><figure><img src='assets/images/here-marketplace/preview-ui.png' alt='Flow from product listing to dataset preview'><figcaption>Fig. 2 — Product listing (left) and the dataset preview feature (right).</figcaption></figure><p>We made ‘preview before purchase’ the core of the journey. Instead of building a brand-new map engine, we reused internal capabilities and exposed them in a simpler UI. That allowed users to pick an area of interest, see coverage or a sample for that exact location, and then proceed to buy or subscribe. For products that couldn’t yet expose real-time previews — like Lidar or more complex bundles — we designed rich fallback blocks (visuals, coverage illustrations, better product storytelling) so they could still live in the same marketplace without breaking the layout.</p><figure><img src='assets/images/here-marketplace/flow.png' alt='Coverage preview at city level'><figcaption>Fig. 3 — End-to-end flow for selecting an area of interest and previewing coverage.</figcaption></figure><figure><img src='assets/images/here-marketplace/basket.png' alt='View of Shopping list'><figcaption>Fig. 3 — End-to-end flow for selecting an area of interest and previewing coverage.</figcaption></figure><p>In the end, the marketplace became self-serve. Customers could understand what they were buying, narrow it to the region they cared about, and start faster. And it had a direct business impact: support and sales no longer had to spend time sending manual samples or explaining coverage over and over, so they could focus on higher-value prospects. Less repetitive work for the company, faster decisions for customers.</p></article>",
+      "categories": [ "product-design", "ui", "data-visualization" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "HERE Technologies",
+      "date": 2021,
+      "location": "Berlin, Germany",
+
+      "bg_color": "#e4e4e4",
+      "ui_color": "#131C4D",
+      "size": 0,
+
+      "cover_img": "cover_0.jpg",
+      "slideshow_imgs": [
+        { "url": "image01.png", "type": "image" },
+        { "url": "image03.jpg", "type": "image" },
+        { "url": "image06.jpg", "type": "image" },
+        { "url": "image02.png", "type": "image" },
+        { "url": "image04.png", "type": "image" }
+      ]
+    },
+    
+    {
+      "name": "LUI Data",
+      "subtitle": "Design Systems for Data Visualization",
+      "unique_url": "dataviz-lib",
+      "description":"<p>A design system focused on data visualization. Our scalable components have been crafted with the needs of designers building data-driven products in mind. With a comprehensive collection of commonly used charts, our system makes it easy to create visually compelling dashboards.</p><p>A plugin to creating maps using dummy data is an especially powerful feature of LUI Data. It streamlines the process of mockup maps for navigation and data visualization purposes, allowing designers to focus on the big picture rather than the minutiae of map creation.</p><p>Our color palettes have also been designed to be highly accessible, mapped for various scales such as sequential, diverging, and categorical, so that all users can benefit from our system.</p><p>In addition to these features, we've also created a set of comprehensive guides that aid designers in selecting the best chart or map to tell their data story. Whether you're new to data visualization or an experienced data professional, our guides offer invaluable insights to help you make the best decisions.</p><p>Developing our LUI Data required extensive research and analysis. We studied all the products across the organization to define a reduced set of components that are flexible enough to support all products but limited enough to minimizing design errors. The result is a powerful and versatile design system that empowers designers to create exceptional data products with ease and precision.</p>",
+      "categories": [ "data-visualization", "ux", "ui" ],
+      "is_selected": true,
+      "is_private": true,
+      "client": "HERE Technologies",
+      "date": 2021,
+      "location": "Berlin, Germany",
+
+      "bg_color": "rgb(255,255,255)",
+      "ui_color": "#F7371E",
+      "size": 0,
+
+      "cover_img": "cover.gif",
+      "slideshow_imgs": [
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" },
+        { "url": "image03.png", "type": "image" },
+        { "url": "image04.jpg", "type": "image" },
+        { "url": "image05.jpg", "type": "image" }
+      ]
+    },
+    
+    {
+      "name": "Mapping Coronavirus pandemics",
+      "subtitle": "",
+      "unique_url": "pandemia",
+      "description":"<p>A visualization about the coronavirus pandemic of 2020.</p>",
+      "categories": [ "data-visualization", "ux", "ui" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "The Data Storytelling Group",
+      "date": 2020,
+      "location": "Berlin, Germany",
+
+      "bg_color": "rgb(20,20,20)",
+      "ui_color": "#F7371E",
+      "size": 1,
+
+      "cover_img": "cover.png",
+      "slideshow_imgs": [
+        { "url": "mapping_covid.mp4", "type": "video" },
+        { "url": "image02.png", "type": "image" },
+        { "url": "image03.png", "type": "image" }
+        
+      ]
+    },
+    {
+      "name": "Data Visualization Tools",
+      "subtitle": "Exploring geo location data",
+      "unique_url": "data-lens",
+      "description":"<article class='post'><p>For 7 years at HERE I worked across a wide spectrum of industries, applications, and technologies — from big data analysis tools and data-visualization JS libraries/APIs to IoT logistics tracking systems and even airspace navigation products. My role was to translate very technical capabilities into experiences real people could actually use. What you see here is a collection of high-end software designed to visualize and explore the world of big data.</p></article>",
+      "categories": [ "data-visualization", "ux", "ui" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "HERE Technologies",
+      "date": 2017,
+      "location": "Berlin, Germany",
+
+      "bg_color": "#333b46",
+      "ui_color": "#ffffff",
+      "size": 0,
+
+      "cover_img": "cover2.jpg",
+      "slideshow_imgs": [
+        { "url": "data-lens.mp4", "type": "video" },
+        { "url": "data-lens-anchoring.mp4", "type": "video" },
+        { "url": "audi-alive.mp4", "type": "video" },
+        { "url": "location-graph.mp4", "type": "video" },
+        { "url": "network-traffic.mp4", "type": "video" },
+        { "url": "image03.png", "type": "image" },
+        { "url": "image06.png", "type": "image" },
+        { "url": "image04.png", "type": "image" },
+        { "url": "image09.png", "type": "image" },
+        { "url": "image02.jpg", "type": "image" },
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image05.png", "type": "image" },
+        { "url": "image10.jpg", "type": "image" },
+        { "url": "image11.png", "type": "image" },
+        { "url": "image12.png", "type": "image" }
+      ]
+    },
+    {
+      "name": "HERE Positioning Infographics",
+      "subtitle": "",
+      "unique_url": "here-positioning",
+      "description":"<p>A series of illustrated infographics for HERE Maps to communicate the complexity of their new service called <a href='https://www.here.com/pages/positioning/' target='blank'>HERE Positioning</a>. The challenge for this project was to simplify the complex technicalities and transform it into scenarios where the technology can help the end user.</p>",
+      "categories": [ "infographics", "motion" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "HERE Technologies",
+      "date": 2017,
+      "location": "Berlin, Germany",
+
+      "bg_color": "#2d2d2d",
+      "ui_color": "#50d8cf",
+      "size": 1,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" },
+        { "url": "image03.gif", "type": "image" }
+      ]
+    },
+    {
+      "name": "Data Storytelling Group",
+      "subtitle": "",
+      "unique_url": "dsg",
+      "description":"<p>The Data Storytelling Group design and develop interactive software that explore how the future might looks like by taking a look into today's data. Anything from traffic flow, migration, golbal economics, pandemics, among other.</p>",
+      "categories": [ "ui", "ux", "data-visualization" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "HERE Technologies",
+      "date": 2005,
+      "location": "Berlin, Germany",
+
+      "bg_color": "#383838",
+      "ui_color": "#ffffff",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "mapping_covid.mp4", "type": "video" },
+        { "url": "future-mobility.mp4", "type": "video" },
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.png", "type": "image" },
+        { "url": "image05.png", "type": "image" },
+        { "url": "image10.png", "type": "image" },
+        { "url": "image03.png", "type": "image" },
+        { "url": "image04.png", "type": "image" }
+      ]
+    },
+    {
+      "name": "ML Whole Earth",
+      "subtitle": "",
+      "unique_url": "whole-earth",
+      "description":"<p>Sometimes I like to dream with the future. I dreams are about a machine, free from human influence, doing what it does best: Monitoring earth natural resources and protecting them from human explorations.</p><p>An meditative experience, A program learning from human activity, reading the latest news about natural resources explotation, with the goal of understanding human impact in order to reduce it.</p><p>The exhibition tool place in HERE Open Studio NightPart, which was part of Berlin Design Week 2019.</p>",
+      "categories": [ "art" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Berlin Design Week",
+      "date": 2019,
+      "location": "Berlin, Germany",
+
+      "bg_color": "#151515",
+      "ui_color": "#a085e4",
+      "size": 2,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "ml_whole_earth.mp4", "type": "video" },
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" }
+      ]
+    },
+    
+    {
+      "name": "ElBulli Recipes",
+      "subtitle": "Understanding the recipes of the world's most famous restaurant",
+      "unique_url": "elbulli-expo",
+      "description":"<p>ElBulli Recipes is an interactive tool that allows you to explore the recipes used by one of the world's most famous restaurants, elBulli. Through this experience, you can learn more about how elBulli creates unbelievable dishes using common ingredients throughout its history. The tool offers two ways of exploring the recipes: by ingredient or by recipe name, providing a playful and engaging way to learn.</p>",
+      "categories": [ "ux", "ui", "data-visualization" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Aerstudio",
+      "date": 2014,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#151515",
+      "ui_color": "white",
+      "size": 1,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "elbulli.mp4", "type": "video" },
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" }
+      ]
+    },
+    
+    {
+      "name": "Arise & Shine App",
+      "subtitle": "",
+      "unique_url": "arisenshine",
+      "description":"<article class='post'><p>Arise and Shine is what happens when an alarm clock and your morning routine decide to work together instead of ruining your life separately.</p><p>It’s a wake-up app built for “I really need 10 more minutes” days. You can snooze like a normal human, but the app is actually smart about it: every time you hit snooze, it quietly adjusts your morning routine in the background — skipping something small or shortening a task — and eventually tells you, “okay, that’s it, if you snooze again you’ll be late.”</p><p>So instead of a passive alarm that just yells at you, Arise and Shine manages two things at once: your sleepiness, your schedule. You get extra sleep when you need it, and you still make it out the door on time — just maybe without the 15-step skincare routine that day. Designed for real mornings, not ideal ones.</p></article>",
+      "categories": [ "illustration","ui", "ux", "motion" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Colores Claros",
+      "date": 2014,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#a085e4",
+      "ui_color": "#0D002E",
+      "size": 1,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "ariseshine_spot.mp4", "type": "video" },
+        { "url": "ariseshine_demo.mp4", "type": "video" },
+        { "url": "image05.gif", "type": "image" },
+        { "url": "image07.gif", "type": "image" }
+        
+      ]
+    },
+    {
+      "name": "Desigual Analytics",
+      "subtitle": "",
+      "unique_url": "desigual",
+      "description":"<p>A series of data driven infographics that visualise important KPIs for the marketing team of the fashion brand called Desigual, it was used as dashboard to follow up their campaing efforts.</p>",
+      "categories": [ "data-visualization", "ui" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Desigual",
+      "date": 2016,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "white",
+      "ui_color": "black",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "desigual_analytics.mp4", "type": "video" },
+        { "url": "image07.jpg", "type": "image" },
+        { "url": "image05.jpg", "type": "image" },
+        { "url": "image04.jpg", "type": "image" },
+        { "url": "image06.jpg", "type": "image" }
+      ]
+    },
+    {
+      "name": "Desigual by Cirque Du Soleil",
+      "subtitle": "",
+      "unique_url": "desigual-cirque",
+      "description":"<p>Desigual and Cirque Du Soleil united forces to create cloths for this special edition. We help shape and produce the digital campaing.</p>",
+      "categories": [ "ui", "ux", "motion" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Desigual",
+      "date": 2016,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "white",
+      "ui_color": "black",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "desigual_cirque.mp4", "type": "video" },
+        { "url": "desigual_cirque_team.mp4", "type": "video" }
+      ]
+    },
+    {
+      "name": "Aerstudio Business Cards",
+      "subtitle": "",
+      "unique_url": "aer",
+      "description":"<p>Sometimes do innovation it feels like exploring unknown planets. I bit like what austronauts felt when they were floating in space for the first time. Business cards for Aerstudio, a design studio based in Barcelona.</p>",
+      "categories": [ "illustration", "print" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Aerstudio",
+      "date": 2015,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#000000",
+      "ui_color": "#66f25b",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" },
+        { "url": "image03.jpg", "type": "image" }
+      ]
+    },
+    {
+      "name": "Motion Design for Tune App",
+      "subtitle": "",
+      "unique_url": "tune-motion",
+      "description":"<p>I crafted all the motion of the UI and micro interactions of Tune App, An iphone app to interact with the Cone wireless speakers. Developed in Objective-C.</p>",
+      "categories": [ "motion" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Aether",
+      "date": 2005,
+      "location": "California, United States",
+
+      "bg_color": "#e1e1e1",
+      "ui_color": "black",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" },
+        { "url": "tune_ui_motion.mp4", "type": "video" }
+      ]
+    },
+    {
+      "name": "Nokia UI Concepts",
+      "subtitle": "",
+      "unique_url": "nokia-ui-concepts",
+      "description":"<p>What you see are few UI concepts for Nokia Music Player (Aka Harmattan). This project was designed in Fjord Helsinki offices where I was working as external.</p>",
+      "categories": [ "ui", "ux" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Fjord",
+      "date": 2005,
+      "location": "Helsinky, Finland",
+
+      "bg_color": "#eb297a",
+      "ui_color": "black",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image03.png", "type": "image" },
+        { "url": "image01.png", "type": "image" }
+      ]
+    },
+    {
+      "name": "The Hanging Gaerden",
+      "subtitle": "",
+      "unique_url": "hanging-garden",
+      "description":"<p>The main goal of this garden was to improve the interaction between office gardens and humans with a very simple visual-physical interface.</p><p>It is basically an office garden hanging from the ceiling, it consist of 20 pots and each one have a humidity sensor &amp; a LED, all connected to an arduino which is reading the humidity every now and then. They'll start to blink or call the owner's attention when one or many of then are gettting thirsty.</p><p>This was a collaborative project between the Clorofilas & Aer, a design studio I was part when I was living in Barcelona, Spain.</p>",
+      "categories": [ "physical-computing" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Aerstudio",
+      "date": 2005,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#f2dfce",
+      "ui_color": "black",
+      "size": 2,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" },
+        { "url": "image03.jpg", "type": "image" },
+        { "url": "image04.jpg", "type": "image" }
+      ]
+    },
+    {
+      "name": "Enllaç",
+      "subtitle": "",
+      "unique_url": "enllac",
+      "description":"<p>UI/UX DEsign for Enllaç, a navigation app for the city of Barcelona.</p>",
+      "categories": [ "ui", "ux" ],
+      "is_selected": true,
+      "is_private": true,
+      "client": "Aerstudio",
+      "date": 2005,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#6b6f89",
+      "ui_color": "#e6e6e6",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" }
+      ]
+    }, 
+    {
+      "name": "TöT",
+      "subtitle": "",
+      "unique_url": "tot-visual-drums",
+      "description":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "categories": [ "ui", "ux" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Personal",
+      "date": 2005,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#100d21",
+      "ui_color": "black",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" },
+        { "url": "image03.jpg", "type": "image" },
+        { "url": "tot_how_it_works.mp4", "type": "video" },
+        { "url": "tot_live.mp4", "type": "video" }
+      ]
+    },
+  
+    {
+      "name": "Moire",
+      "subtitle": "A synesthesic experiences",
+      "unique_url": "moire",
+      "description":"<p>A set of visuals I've designed and developed for Mutuo Centro de Arte.</p> <p><a target='blank' href='https://vimeo.com/82290584'>https://vimeo.com/82290584</a></p>",
+      "categories": [ "art" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Personal",
+      "date": 2014,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "black",
+      "ui_color": "white",
+      "size": 0,
+
+      "cover_img": "cover.gif",
+      "slideshow_imgs": [
+        { "url": "ghost.mp4", "type": "video" },
+        { "url": "square.mp4", "type": "video" }
+      ]
+    },
+    {
+      "name": "Ubeat",
+      "subtitle": "Interactive visuals at Sonar Festival",
+      "unique_url": "ubeat",
+      "description":"<p>U-Beat is a project that tries to give the user control of the pace and intensity of the music with the simple act of dancing. Using motion sensors placed on the arm of the users, we will analyze the way they move and how often, this allows the user to change the pace or intensity using different gestures. The graphics are reactive to the music, creating a visual feedback to the user. This project was done in collaboration with Giampaolo Costagliola, and was exhibited at Sonar 2012, Barcelona.</p><p><a href='https://vimeo.com/48758599'>https://vimeo.com/48758599</a></p>",
+      "categories": [ "ui", "ux" ],
+      "is_selected": false,
+      "is_private": false,
+      "client": "Personal",
+      "date": 2014,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "black",
+      "ui_color": "white",
+      "size": 0,
+
+      "cover_img": "cover.gif",
+      "slideshow_imgs": [
+        { "url": "image01.png", "type": "image" },
+        { "url": "image02.png", "type": "image" },
+        { "url": "image03.png", "type": "image" }
+      ]
+    },
+    {
+      "name": "BeWifi",
+      "subtitle": "",
+      "unique_url": "bewifi",
+      "description":"<p>Design and animation of infographics to explain how this internet's bandwidth sharing works.</p>",
+      "categories": [ "motion", "infographics" ],
+      "is_selected": false,
+      "is_private": false,
+      "client": "Telefonica",
+      "date": 2014,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#eaeaea",
+      "ui_color": "black",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "telefonica_bewifi.mp4", "type": "video" }
+      ]
+    },
+    
+    {
+      "name": "Circle Of Life",
+      "subtitle": "",
+      "unique_url": "circle-life",
+      "description":"<p>Multi-touch Interactive kiosk for promoting the turism in Canarian Islands. Users can meet all the possible destinations all over across the islands. This turism fair took place in London.</p>",
+      "categories": [ "data-visualization", "motion" ],
+      "is_selected": false,
+      "is_private": false,
+      "client": "Bestiario",
+      "date": 2012,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#212121",
+      "ui_color": "#db9033",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "circle-of-life.mp4", "type": "video" },
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" },
+        { "url": "image03.jpg", "type": "image" }
+      ]
+    },
+    {
+      "name": "Quadrigram",
+      "subtitle": "",
+      "unique_url": "quadrigram",
+      "description":"<p>Early explorations for Quadrigram, a node based programming software on the web, that help to parse, transform and visualize data, and publish on the web. I created a visual system for UI & UX.</p>",
+      "categories": [ "data-visualization", "ux", "ui" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Quadrigram",
+      "date": 2013,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#1d2731",
+      "ui_color": "white",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image01.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" },
+        { "url": "image03.jpg", "type": "image" },
+        { "url": "image04.jpg", "type": "image" }
+      ]
+    },
+    {
+      "name": "The Wonders of SuperInteraction",
+      "subtitle": "",
+      "unique_url": "wonders-superinteraction",
+      "description":"<p>The No-Interaction Group presents an imaginary scenario where computers are so human like everyone else. They tell their problems, depressed, happy, excited. They want to be heard.</p><p>An exhibition at Sala Marsà in Tárrega, Spain. February 18 2011 » 20:30h</p>",
+      "categories": [ "physical-computing", "art" ],
+      "is_selected": false,
+      "is_private": true,
+      "client": "No Interaction Group",
+      "date": 2011,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#3f2e41",
+      "ui_color": "#fcf695",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "the_wonders_of_superInteraction.mp4", "type": "video" },
+        { "url": "the_wonders_of_superInteraction_exhibition.mp4", "type": "video" }
+      ]
+    },
+
+    {
+      "name": "Genealogy Studies",
+      "subtitle": "",
+      "unique_url": "genealogy-studies",
+      "description":"<p>A personal project about finding my own identity & origins. After four months of calling every single relative alive, collecting stories and photographs, i could put together a family tree that goes as far as late 1700.</p>",
+      "categories": [ "infographics" ],
+      "is_selected": true,
+      "is_private": false,
+      "client": "Personal",
+      "date": 2017,
+      "location": "Berlin, Germany",
+
+      "bg_color": "white",
+      "ui_color": "red",
+      "size": 1,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "image03.jpg", "type": "image" },
+        { "url": "image02.jpg", "type": "image" },
+        { "url": "image01.jpg", "type": "image" }
+      ]
+    },
+    
+    {
+      "name": "En . (Punto)",
+      "subtitle": "",
+      "unique_url": "en-punto",
+      "description":"<p>En punto its a elegant clock for your screensaver, each number is build out of rectangle, delightfuly animated.</p>",
+      "categories": [ "ui", "ux" ],
+      "is_selected": false,
+      "is_private": false,
+      "client": "Personal",
+      "date": 2013,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#ece9e2",
+      "ui_color": "#3a3a3a",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "en_punto.mp4", "type": "video" },
+        { "url": "image01.jpg", "type": "image" }
+      ]
+    },
+    {
+      "name": "Host This Virus",
+      "subtitle": "",
+      "unique_url": "host-virus",
+      "description":"<p>Design the graphic representation of strings of DNA  from viruses for the classes of data visualization in the Master of Multimedia & Interaction design. The objective of this project is not objectively focused, instead, each data collected was selected for its symbolic meaning and force. We firmly believe that this information has great cultural value that gives strength to the project.",
+      "categories": [ "ui", "ux", "data-visualization" ],
+      "is_selected": false,
+      "is_private": false,
+      "client": "Elisava",
+      "date": 2013,
+      "location": "Barcelona, Spain",
+
+      "bg_color": "#c2c0c3",
+      "ui_color": "#3a3a3a",
+      "size": 0,
+
+      "cover_img": "cover.jpg",
+      "slideshow_imgs": [
+        { "url": "host_this_virus.mp4", "type": "video" }
+      ]
+    }
+  ]
+}
