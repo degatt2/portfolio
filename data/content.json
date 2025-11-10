@@ -162,7 +162,7 @@
 
       "cover_img": "cover.jpg",
       "slideshow_imgs": [
-        { "url": "hug 2024 trailer.mp4", "type": "video", "poster": "cover.png" },
+        { "url": "hugtrailer.mp4", "type": "video", "poster": "cover.png" },
         { "url": "intro.mp4", "type": "video", "poster": "cover.png" },
         { "url": "product.mp4", "type": "video", "poster": "cover.png" },
         { "url": "charts.mp4", "type": "video", "poster": "cover.png" },
