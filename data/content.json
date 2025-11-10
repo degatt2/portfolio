@@ -24,7 +24,7 @@
   "logotype":"Dega.",
 
 
-  "about": "<p>Hi!<br>I’m Daniel González, based in Berlin, Germany.</p> <p>I’m a product designer with 18+ years of experience working for companies like <a target='_blank' href='https://www.personio.com/'>Personio</a>, <a target='_blank' href='https://www.here.com/'>HERE Technologies</a>, <a target='_blank' href='https://www.nokia.com/'>Nokia</a>, <a target='_blank' href='https://www.frog.co/'>Frog Design</a>, <a target='_blank' href='http://www.tid.es/es'>Telefónica I+D</a>, <a target='_blank' href='https://elbullifoundation.com/'>elBullifoundation</a> and others, across HR tech, fintech, automotive, IoT and data visualization products.</p> <p>I’m a broad, experienced generalist who works across the full design spectrum, which gives me a holistic view of how products should look, feel and work. I combine visual design, UX, motion, and prototyping/development with an innovation mindset to discover better, more effective ways to solve problems and to make the brand tangible in every interaction.</p> <p>I lead by doing: setting the bar through hands-on work, sharing tools and methods with the team, and creating a design culture where strong craft and systems thinking are the default.</p> <p>In recent roles I’ve operated on two levels: on the craft side, redesigning core product experiences from the ground up and aligning product and brand into a more modern, coherent interface; and on the system side, defining standards, workflows and internal tools that make that level of quality scalable. I’ve built design-ops tooling to automate on-brand asset creation and reduce review overhead, so designers and developers can focus on the highest-impact parts of the product. This approach addresses a common growth problem: how to keep raising the quality bar while the organization scales.</p> <p>Additionally, I mentor around accessibility and inclusive design, because every person should have equal access to information in their everyday life.</p>",
+  "about": "<p>Hi!, I’m Daniel González, based in Berlin, Germany.</p> <p>I’m a product designer with 18+ years of experience working for companies like <a target='_blank' href='https://www.personio.com/'>Personio</a>, <a target='_blank' href='https://www.here.com/'>HERE Technologies</a>, <a target='_blank' href='https://www.nokia.com/'>Nokia</a>, <a target='_blank' href='https://www.frog.co/'>Frog Design</a>, <a target='_blank' href='http://www.tid.es/es'>Telefónica I+D</a>, <a target='_blank' href='https://elbullifoundation.com/'>elBullifoundation</a> and others, across HR tech, fintech, automotive, IoT and data visualization products.</p> <p>I’m a broad, experienced generalist who works across the full design spectrum, which gives me a holistic view of how products should look, feel and work. I combine visual design, UX, motion, and prototyping/development with an innovation mindset to discover better, more effective ways to solve problems and to make the brand tangible in every interaction.</p> <p>I lead by doing: setting the bar through hands-on work, sharing tools and methods with the team, and creating a design culture where strong craft and systems thinking are the default.</p> <p>In recent roles I’ve operated on two levels: on the craft side, redesigning core product experiences from the ground up and aligning product and brand into a more modern, coherent interface; and on the system side, defining standards, workflows and internal tools that make that level of quality scalable. I’ve built design-ops tooling to automate on-brand asset creation and reduce review overhead, so designers and developers can focus on the highest-impact parts of the product. This approach addresses a common growth problem: how to keep raising the quality bar while the organization scales.</p> <p>Additionally, I mentor around accessibility and inclusive design, because every person should have equal access to information in their everyday life.</p>",
   
   "contact":{
     "fullname": "Daniel Gonzalez", 
@@ -276,7 +276,7 @@
       "name": "HERE Style Editor",
       "subtitle": "Designing a cartographic experience",
       "unique_url": "here-style-editor",
-      "description":"<p>Description to be added soon.</p>",
+      "description":"<article class='post'><p>HERE Style Editor was built for a new wave of designers working on in-car and automotive experiences — people who care about brand and usability but shouldn’t have to become cartographers to change a map.Map design is usually very technical (layers, zoom levels, road classes, accessibility, cultural symbols), and most tools at the time were made for mapping experts. We started from a solid HERE base map and added a friendlier layer on top.</p><figure><video src='assets/images/here-style-editor/demo.mp4' autoplay muted loop playsinline controls></video><figcaption>Fig. 2 — Theme controls to tweak colors and brand palettes.</figcaption></figure><p>Designers could use global color filters, brand palettes, and numeric multipliers to resize whole families of features — like all roads — at once. Power users still had access to the deep cartography panel, but everyone else could quickly make a readable, on-brand map for the car screen without breaking legibility or accessibility.</p><figure><img src='assets/images/here-style-editor/car-interior.jpg' alt='Car navigation previewing the applied style in a car'><figcaption>Fig. 3 — Live preview to validate changes at different zoom levels.</figcaption></figure></article>",
       "categories": [ "data-visualization", "ui" ],
       "is_selected": true,
       "is_private": false,
@@ -291,6 +291,7 @@
       "cover_img": "cover.jpg",
       "slideshow_imgs": [
         { "url": "image01.jpg", "type": "image" },
+        { "url": "demo.mp4", "type": "video" },
         { "url": "image02.jpg", "type": "image" }
       ]
     },
@@ -353,7 +354,7 @@
       "description":"<p>A visualization about the coronavirus pandemic of 2020.</p>",
       "categories": [ "data-visualization", "ux", "ui" ],
       "is_selected": true,
-      "is_private": false,
+      "is_private": true,
       "client": "The Data Storytelling Group",
       "date": 2020,
       "location": "Berlin, Germany",
@@ -412,7 +413,7 @@
       "description":"<p>A series of illustrated infographics for HERE Maps to communicate the complexity of their new service called <a href='https://www.here.com/pages/positioning/' target='blank'>HERE Positioning</a>. The challenge for this project was to simplify the complex technicalities and transform it into scenarios where the technology can help the end user.</p>",
       "categories": [ "infographics", "motion" ],
       "is_selected": true,
-      "is_private": false,
+      "is_private": true,
       "client": "HERE Technologies",
       "date": 2017,
       "location": "Berlin, Germany",
@@ -861,7 +862,7 @@
       "description":"<p>A personal project about finding my own identity & origins. After four months of calling every single relative alive, collecting stories and photographs, i could put together a family tree that goes as far as late 1700.</p>",
       "categories": [ "infographics" ],
       "is_selected": true,
-      "is_private": false,
+      "is_private": true,
       "client": "Personal",
       "date": 2017,
       "location": "Berlin, Germany",
