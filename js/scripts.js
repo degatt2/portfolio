@@ -276,7 +276,7 @@ function preloadCovers ( projects ) {
       continueRender(projects)
 
       var typed = new Typed('.header .what', {
-        strings: ["Hello world!^2000", "Product Designer^2000", "Creative Technologist^2000", "Data Viz Designer^2000" ],
+        strings: ["Product Designer^2000", "Brand Designer^2000", "Creative Technologist^2000", "Data Viz Designer^2000" ],
         showCursor: true,
         startDelay: 1500,
         loop: true,
@@ -586,7 +586,7 @@ function initApp () {
     $('.project-list').removeClass('blur')
   })
 
-  $('.header .what').text('loading ...')
+  // $('.header .what').text('loading ...')
   
 }
 
