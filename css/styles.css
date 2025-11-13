@@ -6,6 +6,11 @@
   -webkit-font-smoothing:antialiased;
 }
 
+.style-1 {
+  --background-color: rgb(119 114 118);
+  --foregroung-color: rgb(253 255 86);
+}
+
 :root {
   --background-color: rgba(240, 240, 240, 1.0);
   --foregroung-color: rgb(4, 9, 255);
@@ -277,6 +282,8 @@ body {
 
 .grid {
   width: 100%;
+  perspective: 1000px;
+  transform-style: preserve-3d;
 }
 
 
@@ -293,6 +300,9 @@ body {
   /* CSS variable for gradient position - will be updated by JavaScript */
   --gradient-x: 50%;
   --gradient-y: 50%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
   
 }
 
@@ -511,7 +521,7 @@ body {
 
 .project-toolbar .back-to-list {
   position: relative;
-  right: auto;
+  right: 20px;
   top: auto;
   width: 48px;
   height: 48px;
@@ -546,21 +556,30 @@ body {
   border-radius: 50%;
   border: none;
   background-color: rgba(255,255,255,0.05);
-  background-image: url('../assets/svg/scroll_up_black.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 14px;
   box-shadow: 0 22px 32px rgba(0, 0, 0, 0.12), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.05), inset 0px 0px 2px rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
   cursor: pointer;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   pointer-events: none;
   transform: translateY(12px);
   transition: opacity 220ms ease, transform 220ms ease, background-color 220ms ease;
+  backdrop-filter: blur(10px);
+  display: flex;                /* add */
+  align-items: center;          /* vertical center */
+  justify-content: center;      /* horizontal center */
 }
+
+.project-scroll-top svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--project-ui-color) !important;
+}  
+
+
+.project-scroll-top svg .cls-1 {
+  fill: var(--project-ui-color) !important;
+}  
 
 .project-scroll-top.is-visible {
   opacity: 1;
@@ -697,6 +716,14 @@ body {
   opacity: 1;
   margin: 12px 30px 30px 30px;
   font-size: 18px;
+  /* text-wrap: balance; */
+}
+
+.project-info .description p:first-of-type {
+  opacity: 1;
+  margin: 12px 30px 30px 30px;
+  font-size: 22px;
+  line-height: 1.4;
   /* text-wrap: balance; */
 }
 
@@ -1062,7 +1089,7 @@ fill: var(--project-ui-color) !important;
 }
 
 .project-gallery .slideshow-controls {
-  padding: 0 clamp(16px, 4vw, 32px);
+  padding: 0 clamp(16px, 4vw, 20px);
 }
 
 
@@ -1213,6 +1240,7 @@ video {
 
 
 /*TOP MENU*/
+/* PRIVATE */
 
 .private-btn {
   width: 40px;
@@ -1222,7 +1250,6 @@ video {
   background-position: center;
   z-index: 300;
   opacity: 1;
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjQuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzA0MDlGRjt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MTMuMSwyMTAuNEg0MTFjMC4xLTEsMC4xLTIsMC4xLTMuMXYtOS43YzAtNDEuNC0xNi4xLTgwLjQtNDUuNS0xMDkuN0MzMzYuNCw1OC42LDI5Ny40LDQyLjUsMjU2LDQyLjUKCWMwLDAtMC4xLDAtMC4xLDBjLTg1LjUsMC0xNTUsNzAuMy0xNTUsMTU2LjV2MTEuNGgtMmMtMjUuMywwLTQ1LjksMjAuNS00NS45LDQ1Ljl2MTY3LjNjMCwyNS4zLDIwLjUsNDUuOSw0NS45LDQ1LjhoMzE0LjMKCWMyNS4zLDAsNDUuOS0yMC41LDQ1LjktNDUuOVYyNTYuM0M0NTksMjMwLjksNDM4LjUsMjEwLjQsNDEzLjEsMjEwLjR6IE0xNzEuNywyMDcuNmwwLjEsMHYtOS45YzAtNDYuNCwzNy44LTg0LjIsODQuMi04NC4yCgljNDYuNCwwLDg0LjIsMzcuOCw4NC4yLDg0LjJ2MTBoMC4xYzAsMC45LDAuMSwxLjgsMC4xLDIuOEgxNzEuN1YyMDcuNnoiLz4KPC9zdmc+Cg==");
   text-align: center;
   position: absolute;
   left: 50%;
@@ -1235,11 +1262,19 @@ video {
   -moz-transition: all 500ms cubic-bezier(0.005, 0.390, 0.000, 1.010);
   -o-transition: all 500ms cubic-bezier(0.005, 0.390, 0.000, 1.010);
   transition: all 500ms cubic-bezier(0.005, 0.390, 0.000, 1.010);
+  display: flex;                /* add */
+  align-items: center;          /* vertical center */
+  justify-content: center;      /* horizontal center */
 }
 
+.private-btn svg {
+  width: 16px;
+  height: 16px;
+}
 
-
-/* PRIVATE */
+.private-btn svg .st0 {
+  fill: var(--foregroung-color) !important;
+}
 
 .private-btn:hover {
   opacity: 1;
@@ -1247,8 +1282,8 @@ video {
   border: 1px solid rgba(240,240,240,1);
 }
 
-.unlock {
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjQuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzA0MDlGRjt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MDYuNCwyNDUuOUgxNjQuOVYxNzJsMC4xLDB2LTkuOWMwLTQ2LjQsMzcuOC04NC4yLDg0LjItODQuMmM0Ni40LDAsODQuMiwzNy44LDg0LjIsODQuMnYxMGgwLjEKCWMwLjIsMTguOCwxNS41LDM0LjEsMzQuNCwzNC4xaDIuMWMxOSwwLDM0LjQtMTUuNCwzNC40LTM0LjR2LTkuN2MwLTQxLjQtMTYuMS04MC40LTQ1LjUtMTA5LjdDMzI5LjYsMjMuMSwyOTAuNyw3LDI0OS4yLDcKCWMwLDAtMC4xLDAtMC4xLDBjLTg1LjUsMC0xNTUsNzAuMy0xNTUsMTU2LjV2ODIuNGgtMmMtMjUuMywwLTQ1LjksMjAuNS00NS45LDQ1Ljl2MTY3LjNjMCwyNS4zLDIwLjUsNDUuOSw0NS45LDQ1LjhoMzE0LjMKCWMyNS4zLDAsNDUuOS0yMC41LDQ1LjktNDUuOVYyOTEuOEM0NTIuMiwyNjYuNSw0MzEuNywyNDUuOSw0MDYuNCwyNDUuOXoiLz4KPC9zdmc+Cg==");
+.unlock svg {
+  display: none;
 }
 
 .unlock-content {
@@ -1361,8 +1396,6 @@ video {
             transform: translate3d(4px, 0, 0);
   }
 }
-
-
 
 /* END PRIVATE */
 
@@ -1556,7 +1589,6 @@ video {
   background-size: 16px;
   color: black;
 }
-
 
 
 .highlighted {

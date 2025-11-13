@@ -152,14 +152,34 @@ function continueRender ( projects ) {
       
     }
 
+    
+    // Fade in items with 3D zoom effect (iOS-style)
     $('.grid .item').each(function(){
       var target_w = $(this).width();
-      $(this).css({opacity: 0});
-      $(this).delay((Math.random() * 1000)).animate({ opacity: 1}, { 
-        duration: (Math.random() * 500 + 500), 
-        easing: "easeOutCubic", 
+      $(this).css({
+        opacity: 0,
+        transform: 'scale(1.5) translateZ(200px)',
+        'transform-style': 'preserve-3d'
+      });
+      $(this).delay((Math.random() * 1000)).animate({ 
+        opacity: 1
+      }, { 
+        duration: (Math.random() * 700 + 500), 
+        easing: "easeOutExpo",
+        step: function(now, fx) {
+          if (fx.prop === 'opacity') {
+            // Animate scale from 1.5 to 1 as opacity goes from 0 to 1
+            var scale = 1.5 - (now * 0.5);
+            var translateZ = 200 - (now * 200);
+            $(this).css({
+              'transform': 'scale(' + scale + ') translateZ(' + translateZ + 'px)'
+            });
+          }
+        },
         complete: function () {
-          
+          $(this).css({
+            'transform': 'scale(1) translateZ(0px)'
+          });
       } })
     })
 
@@ -182,7 +202,7 @@ function continueRender ( projects ) {
     });
     
     $('.grid .item').hover( function () {
-        console.log("Hover a item")
+        // console.log("Hover a item")
           // var typed = new Typed('.item .title', {
           //   strings: ["First ^30000 sentence.", "Second sentence."],
           //   showCursor: false
@@ -256,10 +276,15 @@ function preloadCovers ( projects ) {
       continueRender(projects)
 
       var typed = new Typed('.header .what', {
-        strings: ["Hello world!^2000", "Lead Product Designer" ],
-        showCursor: false,
-        backSpeed: 3,
+        strings: ["Hello world!^2000", "Product Designer^2000", "Creative Technologist^2000", "Data Viz Designer^2000" ],
+        showCursor: true,
         startDelay: 1500,
+        loop: true,
+        cursorChar: '|',
+        smartBackspace: true,
+        typeSpeed: 50,
+        backSpeed: 50,
+        smartBackspace: true,
       });
       
     }
