@@ -277,7 +277,7 @@ function preloadCovers ( projects ) {
 
       var typed = new Typed('.header .what', {
         strings: ["Product Designer^2000", "Brand Designer^2000", "Creative Technologist^2000", "Data Viz Designer^2000" ],
-        showCursor: true,
+        showCursor: false,
         startDelay: 1500,
         loop: true,
         cursorChar: '|',
@@ -366,7 +366,7 @@ function initAbout ( content ) {
 }
 
 function initFooter ( content ) {
-  $('.credits').html(`&mdash; All rights reserved to ${"Daniel González"}, <span class="foo-year">${(new Date()).getFullYear()}</span>.`);
+  $('.credits').html(`All rights reserved to ${"Daniel González"}, <span class="foo-year">${(new Date()).getFullYear()}</span>.`);
   $('.project-list').css( { minHeight: window.innerHeight + 'px' });
   $('.footer').css({opacity: 1})
 }
@@ -704,11 +704,11 @@ function initGrid () {
       $('.background').removeClass('blur')
       $('.slideshow-controls').show();
       $('.image-container').removeClass('blur');
-      $('.back-to-list').show();
+      $('.header-content--project .back-to-list').show();
       $('.image-counter').removeClass('blur');
 
     } else {
-      $('.back-to-list').hide();
+      $('.header-content--project .back-to-list').hide();
       $(this).addClass('active')
       $('.project-info').addClass('open')
       $('.background').addClass('blur')
@@ -791,6 +791,18 @@ function hideCurrentProject() {
   // $('.frame').css({boxShadow: 'inset 0px 0px 0px 8px rgb(240,240,240)'})
   $('.frame').removeClass('project-mode')//.css({boxShadow: 'inset 0px 0px 0px 8px rgb(240,240,240)'})
   $('.header').removeClass('h-project-mode');
+  
+  // Reset header CSS variables when leaving project mode
+  $('.header').css({
+    '--project-surface-color': '',
+    '--project-ui-color': '',
+    '--project-body-color': '',
+    '--project-ui-color-muted': '',
+    '--project-ui-color-subtle': ''
+  });
+  
+  // Reset gradient overlay opacity
+  $('.header-gradient-overlay').css({ opacity: 0 });
 
 
   if (selected_item == undefined ) {
@@ -844,7 +856,8 @@ var current_unique_id = null;
 
 function showProject( unique_id ) {
 
-  $('.header').css("pointer-events","none")
+  // Allow pointer events on header, but the back-to-list button will be clickable
+  $('.header').css("pointer-events","all")
   showSocial(false);
 
   var scrollContainer = $('.project-layout .ui');
@@ -897,6 +910,19 @@ function showProject( unique_id ) {
       '--project-ui-color-muted': mutedColor,
       '--project-ui-color-subtle': subtleColor
     });
+    
+    // Also set the same variables on the header for project UI elements
+    $('.header').css({
+      '--project-surface-color': selected_color,
+      '--project-ui-color': accentColor,
+      '--project-body-color': bodyColor,
+      '--project-ui-color-muted': mutedColor,
+      '--project-ui-color-subtle': subtleColor
+    });
+
+    // Animate gradient overlay fade-in
+    $('.header-gradient-overlay').css({ opacity: 0 }).delay(500).animate({ opacity: 1 }, 1000);
+    
 
     // Reset image slideshow
     $('.image-container .image').css({
@@ -941,6 +967,9 @@ function showProject( unique_id ) {
         $('.project-info .client').text(clientLabel)
         $('.project-info form').remove();
         $('.project-info a').remove();
+
+        // Initialize fullscreen functionality for figure images
+        initFigureFullscreen();
 
         break;
 
@@ -1229,6 +1258,196 @@ function initProjectScrollTopButton() {
   });
 
   toggleButton();
+}
+
+function initFigureFullscreen() {
+  // Remove any existing fullscreen overlay
+  $('.image-fullscreen-overlay').remove();
+  
+  // Remove existing maximize buttons to avoid duplicates
+  $('.project-info .description figure .fullscreen-btn').remove();
+  
+  // Add maximize buttons to all figure images (excluding videos)
+  $('.project-info .description figure').each(function() {
+    var $figure = $(this);
+    var $img = $figure.find('img');
+    var $video = $figure.find('video');
+    
+    // Only add button if there's an image and no video
+    if ($img.length > 0 && $video.length === 0) {
+      // Create maximize button with SVG icon
+      var $btn = $('<div class="fullscreen-btn"></div>');
+      $figure.append($btn);
+      
+      // Load and inject SVG
+      $.get('./assets/svg/maximize-2.svg', function(svgData) {
+        var $svg = $(svgData).filter('svg');
+        if ($svg.length === 0) {
+          $svg = $(svgData).find('svg');
+        }
+        if ($svg.length > 0) {
+          $svg.css({
+            'width': '20px',
+            'height': '20px'
+          });
+          $svg.attr('stroke', 'white');
+          $svg.attr('fill', 'none');
+        }
+        $btn.html($svg.length > 0 ? $svg : svgData);
+      }, 'html').fail(function() {
+        // Fallback: use img tag if SVG load fails
+        var $imgIcon = $('<img>').attr('src', './assets/svg/maximize-2.svg').attr('alt', 'Fullscreen');
+        $imgIcon.css({
+          'width': '20px',
+          'height': '20px',
+          'filter': 'brightness(0) invert(1)'
+        });
+        $btn.html($imgIcon);
+      });
+    }
+  });
+  
+  // Handle maximize button clicks
+  $(document).off('click', '.project-info .description figure .fullscreen-btn').on('click', '.project-info .description figure .fullscreen-btn', function(e) {
+    e.stopPropagation();
+    var $figure = $(this).closest('figure');
+    var $img = $figure.find('img');
+    
+    if ($img.length > 0) {
+      enterFullscreen($img[0]);
+    }
+  });
+  
+  // Handle minimize button clicks (will be added when entering fullscreen)
+  $(document).off('click', '.image-fullscreen-overlay .fullscreen-minimize-btn').on('click', '.image-fullscreen-overlay .fullscreen-minimize-btn', function(e) {
+    e.stopPropagation();
+    exitFullscreen();
+  });
+  
+  // Handle ESC key to exit fullscreen
+  $(document).off('keydown.fullscreen').on('keydown.fullscreen', function(e) {
+    if (e.key === 'Escape' && $('.image-fullscreen-overlay.active').length > 0) {
+      exitFullscreen();
+    }
+  });
+  
+  // Handle click on overlay background to exit
+  $(document).off('click', '.image-fullscreen-overlay').on('click', '.image-fullscreen-overlay', function(e) {
+    if ($(e.target).hasClass('image-fullscreen-overlay')) {
+      exitFullscreen();
+    }
+  });
+}
+
+function enterFullscreen(imgElement) {
+  // Create fullscreen overlay if it doesn't exist
+  if ($('.image-fullscreen-overlay').length === 0) {
+    var $overlay = $('<div class="image-fullscreen-overlay"></div>');
+    var $container = $('<div class="fullscreen-image-container"></div>');
+    var $minimizeBtn = $('<div class="fullscreen-minimize-btn"></div>');
+    
+    // Load and inject minimize SVG
+    $.get('./assets/svg/minimize-2.svg', function(svgData) {
+      var $svg = $(svgData).filter('svg');
+      if ($svg.length === 0) {
+        $svg = $(svgData).find('svg');
+      }
+      if ($svg.length > 0) {
+        $svg.css({
+          'width': '24px',
+          'height': '24px'
+        });
+        $svg.attr('stroke', 'white');
+        $svg.attr('fill', 'none');
+      }
+      $minimizeBtn.html($svg.length > 0 ? $svg : svgData);
+    }, 'html').fail(function() {
+      // Fallback: use img tag if SVG load fails
+      var $imgIcon = $('<img>').attr('src', './assets/svg/minimize-2.svg').attr('alt', 'Exit fullscreen');
+      $imgIcon.css({
+        'width': '24px',
+        'height': '24px',
+        'filter': 'brightness(0) invert(1)'
+      });
+      $minimizeBtn.html($imgIcon);
+    });
+    
+    $overlay.append($container);
+    $overlay.append($minimizeBtn);
+    $('body').append($overlay);
+  }
+  
+  var $overlay = $('.image-fullscreen-overlay');
+  var $container = $overlay.find('.fullscreen-image-container');
+  
+  // Clone the image/video element with all attributes
+  var $original = $(imgElement);
+  var $clone;
+  
+  if ($original.is('video')) {
+    // For video, create a new video element with all attributes
+    $clone = $('<video></video>');
+    var attrs = $original[0].attributes;
+    for (var i = 0; i < attrs.length; i++) {
+      $clone.attr(attrs[i].name, attrs[i].value);
+    }
+    // Ensure controls are visible in fullscreen
+    $clone.attr('controls', 'controls');
+    $clone.css({
+      'max-width': '100%',
+      'max-height': '95vh',
+      'object-fit': 'contain'
+    });
+  } else {
+    // For images, clone normally
+    $clone = $original.clone();
+    $clone.css({
+      'max-width': '100%',
+      'max-height': '95vh',
+      'object-fit': 'contain'
+    });
+  }
+  
+  // Clear container and add cloned element
+  $container.empty().append($clone);
+  
+  // If it's a video, play it
+  if ($clone.is('video')) {
+    setTimeout(function() {
+      $clone[0].play().catch(function(e) {
+        console.log('Video autoplay prevented:', e);
+      });
+    }, 100);
+  }
+  
+  // Show overlay with transition
+  setTimeout(function() {
+    $overlay.addClass('active');
+  }, 10);
+  
+  // Prevent body scroll
+  $('body').css('overflow', 'hidden');
+}
+
+function exitFullscreen() {
+  var $overlay = $('.image-fullscreen-overlay');
+  
+  // Stop any playing videos
+  $overlay.find('video').each(function() {
+    this.pause();
+    this.currentTime = 0;
+  });
+  
+  // Hide overlay
+  $overlay.removeClass('active');
+  
+  // Re-enable body scroll
+  $('body').css('overflow', '');
+  
+  // Remove overlay after transition
+  setTimeout(function() {
+    $overlay.remove();
+  }, 300);
 }
 
 
